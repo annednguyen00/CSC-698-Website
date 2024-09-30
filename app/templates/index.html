@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Home</h2>
+<hr>
+<div class="introduction">
+    <p><span>This website aims to provide information on mass shootings in the 
+        United States from 2017 to 2022. The dashboards on this site will display 
+        the counts of shootings incidents, victims killed, and victims injured. 
+        It is important to note that the definition of mass shootings may differ 
+        across other platforms. The definition used on this site states that if 4 
+        or more people are killed then it is considered as a mass killing. 
+    </span></p>
+</div>
+<br><br>
+
+<h2>At a Glance</h2>
+<hr>
+<br>
+<h3>Since 2020, the number of shooting incidents and victims have been on the rise. 
+    <h3>
+<div class="container">
+    <img src="{{ url_for('static', filename='fig1.png') }}" class="figure"/>
+    <img src="{{ url_for('static', filename='fig2.png') }}" class="figure"/>
+</div>
+
+<hr>
+<br>
+<h3>A majority of shooting victims were white and/or in their 20s to 30s. <h3>
+<div class="container">
+    <img src="{{ url_for('static', filename='fig7.png') }}" class="figure"/>
+    <img src="{{ url_for('static', filename='fig8.png') }}" class="figure"/>
+</div>
+<br>
+
+<hr>
+<br>
+<h3>A majority of shooting offenders were male and/or in their 20s. <h3>
+<div class="container">
+    <img src="{{ url_for('static', filename='fig5.png') }}" class="figure"/>
+    <img src="{{ url_for('static', filename='fig6.png') }}" class="figure"/>
+</div>
+<br>
+
+<hr>
+<div class="container">
+    <h3>Most incidents occurred in residences. </h3>
+    <img src="{{ url_for('static', filename='fig3.png') }}" class="figure"/>
+</div>
+<br>
+
+<hr>
+<div class="container">
+    <img src="{{ url_for('static', filename='fig4.png') }}" class="figure"/>
+    <h3>Most victims were killed in residences and injured in open spaces. </h3>
+</div>
+<br>
+
+<hr>
+<div class="container">
+    <h3>The most common weapons used in mass shootings were <br/> semiautomatic rifles 
+        and semiautomatic handguns.  </h3>
+    <img src="{{ url_for('static', filename='fig9.png') }}" class="figure"/>
+</div>
+<br><br>
+{% endblock %}

@@ -1,0 +1,65 @@
+:root {
+    --background-color: #ffffff;
+    --navigation-color: #455d7a;
+    --introduction-color: #e3e3e3;
+}
+
+* {
+    font-family: Garamond, serif;
+}
+
+.header {
+    padding: 25px;
+}
+
+.navigation {
+    overflow: hidden;
+    background-color: var(--navigation-color);
+    color: var(--background-color);
+}
+
+.navigation a {
+    float: left; 
+    display: block; 
+    text-align: center; 
+    text-decoration: none; 
+    padding: 14px 20px; 
+    background-color: var(--navigation-color);
+    color: var(--background-color)
+}
+
+.navigation a:hover {
+    transition: all 0.5s ease;
+    background-color: var(--background-color);
+    color: var(--navigation-color);
+}
+
+.introduction {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.introduction span{
+    padding: 10px;
+    display: inline-block;
+    background-color: var(--introduction-color);
+}
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+}
+
+.figure {
+    height: 100%;
+    width: 100%;
+}

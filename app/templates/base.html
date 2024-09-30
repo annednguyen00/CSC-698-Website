@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+      <title>Mass Shootings</title>
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+    </head>
+    <body>
+        <div class="header">
+            <h1>U.S. Mass Shootings from 2017 to 2022</h1>
+        </div>
+        <div class="navigation">
+            <a href="/index">Home</a>
+            <a href="/us/">U.S. Dashboard</a>
+            <a href="/world/">World Dashboard</a>
+            <a href="/predictions/">2023 Predictions Dashboard</a>
+        </div>
+        {% block content %}{% endblock %}
+    </body>
+</html>

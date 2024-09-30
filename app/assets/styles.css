@@ -1,0 +1,49 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #233142;
+    --navigation-color: #455d7a;
+}
+
+.header {
+    font-family: Garamond, serif;
+    padding: 25px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.dash_heading {
+    font-family: Garamond, serif;
+    color: var(--text-color);
+}
+
+.navigation {
+    font-family: Garamond, serif;
+    overflow: hidden;
+    background-color: var(--navigation-color);
+    color: var(--background-color);
+}
+
+.navigation a {
+    font-family: Garamond, serif;
+    float: left; 
+    display: block; 
+    text-align: center; 
+    text-decoration: none; 
+    padding: 14px 20px; 
+    background-color: var(--navigation-color);
+    color: var(--background-color)
+}
+
+.navigation a:hover {
+    font-family: Garamond, serif;
+    transition: all 0.5s ease;
+    background-color: var(--background-color);
+    color: var(--navigation-color);
+}
+
+@media screen and (max-width: 400px) {
+    .label {
+        float: none;
+        width: 100%;
+    }
+}
